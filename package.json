@@ -4,12 +4,15 @@
   "description": "Cookie authentification with Next.js",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "NODE_ENV=production node server.js",
+    "build": "next build",
   },
   "author": "Roman Shprenger",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
+    "cookie-parser": "^1.4.4",
     "express": "^4.17.0",
     "next": "^8.1.0",
     "nodemon": "^1.19.0",
